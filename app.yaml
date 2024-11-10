@@ -1,0 +1,25 @@
+runtime: nodejs18
+env: standard
+instance_class: F1
+
+handlers:
+  - url: /static
+    static_dir: dist/static
+    
+  - url: /(.*\.(json|ico|js|css|png|jpg|gif|svg|woff|woff2|ttf|eot))$
+    static_files: dist/\1
+    upload: dist/.*\.(json|ico|js|css|png|jpg|gif|svg|woff|woff2|ttf|eot)$
+    
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
+    secure: always
+
+env_variables:
+  VITE_FIREBASE_API_KEY: ""
+  VITE_FIREBASE_AUTH_DOMAIN: ""
+  VITE_FIREBASE_PROJECT_ID: ""
+  VITE_FIREBASE_STORAGE_BUCKET: ""
+  VITE_FIREBASE_MESSAGING_SENDER_ID: ""
+  VITE_FIREBASE_APP_ID: ""
+  VITE_FIREBASE_MEASUREMENT_ID: ""

@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: dheerajpullarevu/taskmates
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  site_domain: taskmates.in
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/content/home.json"
+        fields:
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Subtitle", name: "heroSubtitle", widget: "string"}
+          - {label: "Hero Description", name: "heroDescription", widget: "text"}
+          
+      - label: "About"
+        name: "about"
+        file: "src/content/about.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Content", name: "body", widget: "markdown"}

@@ -1,0 +1,51 @@
+{
+  "name": "taskmates",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@stripe/stripe-js": "^2.4.0",
+    "agora-rtc-react": "^2.1.0",
+    "date-fns": "^3.3.1",
+    "firebase": "^10.8.0",
+    "i18next": "^23.10.0",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.5.0",
+    "lucide-react": "^0.344.0",
+    "razorpay": "^2.9.2",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.10.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.50.1",
+    "react-i18next": "^14.0.5",
+    "react-router-dom": "^6.22.1",
+    "react-share": "^5.1.0",
+    "recharts": "^2.12.1",
+    "zustand": "^4.5.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0", 
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.3"
+  }
+}

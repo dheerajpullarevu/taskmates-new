@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "tasks": "Browse Tasks",
+    "createTask": "Post Task",
+    "profile": "Profile",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "hero": {
+    "title": "Your Tasks, Our Priority",
+    "subtitle": "Get More Done with TaskMates",
+    "description": "Connect with skilled professionals for any task. From quick deliveries to specialized services, TaskMates helps you get things done efficiently and affordably."
+  },
+  "categories": {
+    "title": "Popular Task Categories",
+    "subtitle": "Find the perfect TaskMate for any job, big or small",
+    "delivery": "Delivery & Logistics",
+    "professional": "Professional Services",
+    "online": "Online Tasks",
+    "handyman": "Handyman",
+    "creative": "Creative & Design",
+    "shopping": "Personal Shopping"
+  }
+}

@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://taskmates.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Media files
+Allow: /images/
+Allow: /assets/
+
+# API endpoints
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow Google to crawl JavaScript and CSS
+Allow: /*.js$
+Allow: /*.css$
+
+# Block search crawlers from scanning specific files
+Disallow: /firebase-messaging-sw.js
+Disallow: /service-worker.js
+Disallow: /*.json$
